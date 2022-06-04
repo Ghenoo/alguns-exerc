@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*while(true){
+            contador = 0;
+            var populacaoA = parseInt(prompt("Digite a quantidade da população A:"));
+            var populacaoB = parseInt(prompt("Digite a quantidade da população B:"));
+            while (true) {
+                var crescimentoA = populacaoA + (populacaoA * 0.06);
+                populacaoA = crescimentoA;
+                var crescimentoB = populacaoB + (populacaoB * 0.03);
+                populacaoB = crescimentoB;
+                contador++;
+                console.log("Ano ", contador)
+                console.log("População A = ", parseInt(populacaoA))
+                console.log("População B = ", parseInt(populacaoB))
+                if (populacaoA >= populacaoB)
+                    break;
+                }
+            alert(`Para que A ultrapasse B nessas taxas, serão necessários ${contador} anos.`)
+            var repetir = prompt("Deseja repetir a operação? (s) s = sim | Caso seja digitado algo diferente de s, a operação será cancelada. ").toLowerCase();
+            if(repetir == 's')
+                continue
+            else
+                break        
+        }
+*/
+        /*do{
+            contador = 0;
+            var populacaoA = parseInt(prompt("Digite a quantidade da população A:"));
+            var populacaoB = parseInt(prompt("Digite a quantidade da população B:"));
+            do{
+                var crescimentoA = populacaoA + (populacaoA * 0.06);
+                populacaoA = crescimentoA;
+                var crescimentoB = populacaoB + (populacaoB * 0.03);
+                populacaoB = crescimentoB;
+                contador++;
+                console.log("Ano ", contador)
+                console.log("População A = ", parseInt(populacaoA))
+                console.log("População B = ", parseInt(populacaoB))
+                if (populacaoA >= populacaoB)
+                    break;
+                }while(true)
+            alert(`Para que A ultrapasse B nessas taxas, serão necessários ${contador} anos.`)
+            var repetir = prompt("Deseja repetir a operação? (s) s = sim | Caso seja digitado algo diferente de s, a operação será cancelada. ").toLowerCase();
+            if(repetir == 's')
+                continue
+            else
+                break
+        }while(true)*/
+
+        for (var i = 0; i < 3; i++) {
+            if (i == 1) {
+                i--;
+            }
+            contador = 0;
+            var populacaoA = parseInt(prompt("Digite a quantidade da população A:"));
+            var populacaoB = parseInt(prompt("Digite a quantidade da população B:"));
+            for (var i = 0; i < 3; i++) {
+                if (i == 1) {
+                    i--;
+                }
+                var crescimentoA = populacaoA + (populacaoA * 0.06);
+                populacaoA = crescimentoA;
+                var crescimentoB = populacaoB + (populacaoB * 0.03);
+                populacaoB = crescimentoB;
+                contador++;
+                console.log("Ano ", contador)
+                console.log("População A = ", parseInt(populacaoA))
+                console.log("População B = ", parseInt(populacaoB))
+                if (populacaoA >= populacaoB)
+                    break;
+            }
+            alert(`Para que A ultrapasse B nessas taxas, serão necessários ${contador} anos.`)
+            var repetir = prompt("Deseja repetir a operação? (s) s = sim | Caso seja digitado algo diferente de s, a operação será cancelada. ").toLowerCase();
+            if(repetir == 's')
+                continue
+            else
+                break
+        }
+    </script>
+</body>
+
+</html>

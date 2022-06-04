@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>/*
+while (true) {
+var nome = prompt("Digite seu nome: ")
+if (nome.length < 3) {
+alert("O nome não pode ter menos de 3 caracteres")
+continue;
+}
+var idade = parseInt(prompt("Digite sua idade: "))
+if (idade <= 0 || isNaN(idade)) {
+alert("A idade não pode ser menor ou igual a zero e nem nulo")
+continue;
+}
+if (idade >= 150) {
+alert("A idade não pode ser maior ou igual a 150")
+continue;
+}
+var salario = parseFloat(prompt("Digite seu salário: "))
+if (salario <= 0 || isNaN(salario)) {
+alert("O salário não pode ser menor ou igual a zero e nem nulo")
+continue;
+}
+var sexo = prompt("Digite seu sexo: ").toLowerCase();
+if (sexo != "f" && sexo != "m") {
+alert("O sexo pode ser apenas 'f' ou 'm', tente novamente. ")
+continue;
+}
+
+var estadoCivil = prompt("Digite seu estado civil: ").toLowerCase()
+if (estadoCivil != "s" && estadoCivil != "c" && estadoCivil != "v" && estadoCivil != "d") {
+alert("O estado civil pode ser apenas 's', 'c', 'v' ou 'd', tente novamente")
+continue;
+}
+alert("Validado com sucesso!!")
+break;
+}*/
+
+        /*do {
+            var nome = prompt("Digite seu nome: ")
+            if (nome.length < 3) {
+                alert("O nome não pode ter menos de 3 caracteres")
+                continue;
+            }
+            var idade = parseInt(prompt("Digite sua idade: "))
+            if (idade <= 0 || isNaN(idade)) {
+                alert("A idade não pode ser menor ou igual a zero e nem nulo")
+                continue;
+            }
+            if (idade >= 150) {
+                alert("A idade não pode ser maior ou igual a 150")
+                continue;
+            }
+            var salario = parseFloat(prompt("Digite seu salário: "))
+            if (salario <= 0 || isNaN(salario)) {
+                alert("O salário não pode ser menor ou igual a zero e nem nulo")
+                continue;
+            }
+            var sexo = prompt("Digite seu sexo: ").toLowerCase();
+            if (sexo != "f" && sexo != "m") {
+                alert("O sexo pode ser apenas 'f' ou 'm', tente novamente. ")
+                continue;
+            }
+
+            var estadoCivil = prompt("Digite seu estado civil: ").toLowerCase()
+            if (estadoCivil != "s" && estadoCivil != "c" && estadoCivil != "v" && estadoCivil != "d") {
+                alert("O estado civil pode ser apenas 's', 'c', 'v' ou 'd', tente novamente")
+                continue;
+            }
+            alert("Validado com sucesso!!")
+            break;
+        } while (true)*/
+
+        for (var i = 0; i < 3; i++) {
+            if (i == 1) {
+                i--;
+            }
+            var nome = prompt("Digite seu nome: ")
+            if (nome.length < 3) {
+                alert("O nome não pode ter menos de 3 caracteres")
+                continue;
+            }
+            var idade = parseInt(prompt("Digite sua idade: "))
+            if (idade <= 0 || isNaN(idade)) {
+                alert("A idade não pode ser menor ou igual a zero e nem nulo")
+                continue;
+            }
+            if (idade >= 150) {
+                alert("A idade não pode ser maior ou igual a 150")
+                continue;
+            }
+            var salario = parseFloat(prompt("Digite seu salário: "))
+            if (salario <= 0 || isNaN(salario)) {
+                alert("O salário não pode ser menor ou igual a zero e nem nulo")
+                continue;
+            }
+            var sexo = prompt("Digite seu sexo: ").toLowerCase();
+            if (sexo != "f" && sexo != "m") {
+                alert("O sexo pode ser apenas 'f' ou 'm', tente novamente. ")
+                continue;
+            }
+            var estadoCivil = prompt("Digite seu estado civil: ").toLowerCase()
+            if (estadoCivil != "s" && estadoCivil != "c" && estadoCivil != "v" && estadoCivil != "d") {
+                alert("O estado civil pode ser apenas 's', 'c', 'v' ou 'd', tente novamente")
+                continue;
+            }
+            alert("Validado com sucesso!!")
+            break;
+        }
+
+    </script>
+</body>
+
+</html>
